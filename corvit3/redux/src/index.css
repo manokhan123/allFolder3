@@ -1,0 +1,27 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 5px 5px 5px black;
+  height: 200px;
+}
+
+
+button{
+  padding: 10px 20px;
+  border: none;
+  background-color: olive;
+  color: white;
+  border: none;
+  box-shadow: 0 0 30px 1px black;
+}
+

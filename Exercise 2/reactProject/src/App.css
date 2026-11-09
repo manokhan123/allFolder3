@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+ 
+:root {
+  --paper: #f9f7f2;
+  --ink: #201d1a;
+  --ink-soft: #6b665c;
+  --line: #ddd7c8;
+  --stamp-red: #b23a2e;
+  --stock-green: #3f7d53;
+  --stock-amber: #b8842b;
+  --card: #ffffff;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  background: var(--paper);
+}
+ 
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--ink);
+}
+ 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+ 
+.page-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+ 
+.cart-counter {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+ 
+.cart-label {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+ 
+.cart-value {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  min-width: 28px;
+  text-align: center;
+}
+ 
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+ 
+.ticket {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+ 
+.ticket:hover {
+  border-color: var(--ink);
+}
+ 
+.ticket-perforation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background: var(--paper);
+  height: 10px;
+  align-items: center;
+}
+ 
+.ticket-perforation span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--card);
+}
+ 
+.ticket-body {
+  padding: 20px;
+}
+ 
+.ticket-category {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 2px 8px;
+  margin-bottom: 10px;
+}
+ 
+.ticket-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  margin: 0 0 14px;
+}
+ 
+.ticket-price {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+ 
+.ticket-price .currency {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-right: 4px;
+}
+ 
+.ticket-stock {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+ 
+.ticket-stock .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+ 
+.ticket-stock.in {
+  color: var(--stock-green);
+}
+.ticket-stock.in .dot {
+  background: var(--stock-green);
+}
+ 
+.ticket-stock.low {
+  color: var(--stock-amber);
+}
+.ticket-stock.low .dot {
+  background: var(--stock-amber);
+}
+ 
+.ticket-stock.out {
+  color: var(--stamp-red);
+}
+.ticket-stock.out .dot {
+  background: var(--stamp-red);
+}
+ 
+.stamp-btn {
+  width: 100%;
+  padding: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+ 
+.stamp-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+ 
+.stamp-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+ 
+.stamp-btn:disabled {
+  background: transparent;
+  color: var(--stamp-red);
+  border: 1px dashed var(--stamp-red);
+  cursor: not-allowed;
+}
+ 
+@media (max-width: 480px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

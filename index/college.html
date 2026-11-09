@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    .bulb {
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+    }
+
+    .bulb h1 {
+      font-size: 24px;
+      color: black;
+    }
+
+    .bulb-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: solid 1px #ccc;
+      background-color: crimson;
+      color: white;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="bulb">
+    <h1>bulb</h1>
+  </div>
+  <button onclick="toggleBulb()" id="bulb-btn" class="bulb-btn">on off bulb</button>
+
+  <input type="text" placeholder="Enter the word" id="nameInput">
+  <input type="text" placeholder="enter age" id="ageInput">
+  <button onclick="showName()">Show the text</button>
+  <p id="nameoutput"></p>
+
+  
+
+  <script>
+
+    function toggleBulb() {
+      let bulb = document.querySelector(".bulb");
+      bulb.style.backgroundColor = bulb.style.backgroundColor === "yellow" ? "white" : "yellow";
+      document.body.style.backgroundColor = bulb.style.backgroundColor === "yellow" ? "white" : "black";
+      document.getElementById("bulb-btn").style.backgroundColor = bulb.style.backgroundColor === "yellow" ? "crimson" : "black";
+
+    }
+
+
+    function showName() {
+      let name = document.getElementById("nameInput").value;
+      let age = document.getElementById("ageInput").value;
+      document.getElementById("nameoutput").innerText = "Hello , " + name + "! your age is " + age;
+
+    }
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>

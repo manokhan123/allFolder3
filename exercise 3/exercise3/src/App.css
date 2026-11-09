@@ -1,0 +1,484 @@
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  background: linear-gradient(135deg, #172554, #2563eb);
+  color: white;
+  padding: 45px 20px;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icon {
+  font-size: 55px;
+}
+
+.welcome-text {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.header-description {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stat-icon {
+  font-size: 32px;
+}
+
+.stat-card p {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.stat-card h3 {
+  font-size: 26px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+
+  padding: 15px 20px 15px 48px;
+
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  outline: none;
+  background: white;
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+
+  left: 17px;
+  top: 14px;
+
+  font-size: 18px;
+}
+
+.search-section select {
+  padding: 0 18px;
+
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+
+  background: white;
+
+  font-size: 15px;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.search-section select:focus {
+  border-color: #2563eb;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.section-heading p {
+  color: #64748b;
+}
+
+.blog-count {
+  background: #e0e7ff;
+  color: #3730a3;
+
+  padding: 8px 15px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   BLOG GRID
+========================= */
+
+.blog-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================
+   BLOG CARD
+========================= */
+
+.blog-card {
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.category-badge {
+  background: #dbeafe;
+  color: #1d4ed8;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.featured-badge {
+  background: #fef3c7;
+  color: #92400e;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.blog-card h2 {
+  font-size: 21px;
+
+  margin-bottom: 12px;
+
+  color: #111827;
+}
+
+.blog-description {
+  color: #64748b;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   BLOG INFO
+========================= */
+
+.blog-info {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+
+  border-top: 1px solid #e5e7eb;
+
+  padding-top: 18px;
+}
+
+.info-label {
+  display: block;
+
+  font-size: 12px;
+
+  color: #94a3b8;
+
+  margin-bottom: 5px;
+}
+
+.blog-info strong {
+  font-size: 14px;
+
+  color: #334155;
+}
+
+
+/* =========================
+   FEATURED STATUS
+========================= */
+
+.featured-status {
+  margin-top: 15px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.featured-status strong {
+  font-size: 14px;
+
+  color: #334155;
+}
+
+
+/* =========================
+   FAVORITE + DELETE
+========================= */
+
+.card-buttons {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.favorite-button,
+.delete-button {
+  flex: 1;
+
+  padding: 11px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.favorite-button {
+  background: #fce7f3;
+  color: #be185d;
+}
+
+.favorite-button:hover {
+  background: #fbcfe8;
+}
+
+.delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.delete-button:hover {
+  background: #fecaca;
+}
+
+
+/* =========================
+   READ BUTTON
+========================= */
+
+.read-button {
+  width: 100%;
+
+  margin-top: 15px;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.read-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   NO RESULTS
+========================= */
+
+.no-results {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  padding: 40px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  color: #64748b;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .search-section {
+    flex-direction: column;
+  }
+
+  .search-section select {
+    height: 48px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .header-content {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .container {
+    padding: 25px 15px;
+  }
+
+  .blog-card {
+    padding: 20px;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,16 @@
+{
+  "name": "https-with-fs",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mano" : "nodemon index.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

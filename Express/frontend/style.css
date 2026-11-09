@@ -1,0 +1,22 @@
+.main
+{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main h1{
+  background-image: url(https://i.pinimg.com/736x/ca/67/c7/ca67c71f9d34125249daa9b69298443c.jpg);
+  background-size: cover;
+  background-clip: text;
+  background-position: center;
+  color: transparent;
+}
+
+span{
+  background-color: rgba(0, 0, 0, 0.152);
+  padding: 10px;
+  box-shadow: 0 0 20px 1px black;
+}

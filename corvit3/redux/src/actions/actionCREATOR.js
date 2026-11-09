@@ -1,0 +1,1 @@
+export * as actionCREATOR from './action'

@@ -1,0 +1,27 @@
+form{
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 0 30px 1px black;
+}
+input , textarea{
+  border:none;
+  width: 98%;
+
+  border-bottom: 1px solid olive;
+  height: 30px;
+
+
+
+}
+#btn{
+  color: white;
+  background-color: olive;
+  width: 100px;
+  box-shadow: 0 0 20px 1px black;
+}
